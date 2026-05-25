@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Manual Maestro de Comandos iGunsFire</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.4; color: #333; background: #f0f2f5; padding: 20px; }
+        .container { max-width: 1100px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        h1 { text-align: center; color: #19c945; border-bottom: 3px solid #1a73e8; padding-bottom: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; }
+        .card { border: 1px solid #ddd; padding: 15px; border-radius: 5px; background: #fafafa; border-left: 5px solid #1a73e8; }
+        .card.admin { border-left-color: #d93025; background: #fff8f7; }
+        .card.gm { border-left-color: #f9ab00; background: #fffdf0; }
+        .card.reseller { border-left-color: #1e8e3e; background: #f6ffed; }
+        code { font-weight: bold; color: #c5221f; font-size: 1.1em; background: #eee; padding: 2px 4px; }
+        .rank { font-size: 16px; font-weight: bold; text-transform: uppercase; color: #09d41a; margin-bottom: 5px; display: block; }
+        .vnts { font-size: 16px; font-weight: bold; text-transform: uppercase; color: #0c24f8; margin-bottom: 5px; display: block; }
+        .desc { font-size: 0.9em; margin-top: 8px; color: #0b33e6; }
+
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>📚 Lista Completa de Comandos iGunsFire</h1>
+    
+    <div class="grid">
+
+        <div class="card reseller">
+            <span class="rank" >GM / MOD</span>
+            <code>/ban [ID] [Días] [Razón]</code>
+            <div class="desc">Baneo de cuenta por días. "e" para eterno (Solo ID 2).</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank" >GM / MOD</span>
+            <code>/gm_mute [ID] [Horas]</code>
+            <div class="desc">Silencia al usuario en el chat. Máximo 5 horas.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/unmuted [ID] [Horas]</code>
+            <div class="desc">Quita el silencio de chat al GM que lo usa.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/info [Nombre]</code>
+            <div class="desc">Ver ID, Cash, Gold, IP y Stats de un jugador.</div>
+        </div>
+
+         <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/find_ip [ID]</code>
+            <div class="desc">Busca a otros usuarios conectados con la misma IP que el ID dado.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/regalo [ID] [AvatarID]</code>
+            <div class="desc">Envía un avatar específico de regalo a un usuario.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/borrar_avatar [ID] [AvaID]</code>
+            <div class="desc">Elimina una sola prenda específica del inventario de un usuario.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/trivia [Monto] "P" [R]</code>
+            <div class="desc">Inicia trivia por Cash con ventana pop-up dorada.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/regalo_suerte [Monto]</code>
+            <div class="desc">Suelta un premio de Cash. El primero en escribir <code>/yo</code> gana.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/aviso [Mensaje]</code>
+            <div class="desc">Envía una ventana emergente (Alerta 17) a todo el servidor.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/mall [Mensaje] [Mensaje]</code>
+            <div class="desc">Mensaje de corneta (Bugle) para todos los servidores.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/mserver [Mensaje]</code>
+            <div class="desc">Mensaje de corneta (Bugle) solo para el servidor actual.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/lobby_msj [Texto]</code>
+            <div class="desc">Fija un mensaje rosa (LOVE) en el chat del lobby.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/lobby_msj_clear</code>
+            <div class="desc">Elimina el mensaje fijado del lobby.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/bomba [Tamaño]</code>
+            <div class="desc">Carga una bala que destruye el mapa. Tamaño máximo 180.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/rayo [Tamaño]</code>
+            <div class="desc">Fuerza que caiga un rayo en el punto de impacto del disparo.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/mastergm [Tamaño]</code>
+            <div class="desc">Quita el master al dueño actual y te lo da a ti.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/pull [ID] [Tamaño]</code>
+            <div class="desc">Jala a un usuario de cualquier parte a tu sala actual.</div>
+        </div>
+        
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/champions_start </code>
+            <div class="desc">Dar inicio ala champios.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/reset_champions </code>
+            <div class="desc">Reinicia el servidor de League/Champions por completo.</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/sudden </code>
+            <div class="desc">Activar muerte subita</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/start </code>
+            <div class="desc">Dar ready ala partida cuando esten completos los jugadores </div>
+        </div>
+        
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/kick_all </code>
+            <div class="desc">Botar a todos los que estan en la sala </div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/room100 </code>
+            <div class="desc">la sala se convierte en 100vs100</div>
+        </div>
+
+        <div class="card reseller">
+            <span class="rank">GM / MOD</span>
+            <code>/evento_2 HORAS PORCENTAJE </code>
+            <div class="desc">ejemlo /evento_2 1 300 (se activa 1 hora de vento 300%).</div>
+        </div>
+        
+        <div class="card reseller"">
+            <span class="rank"> GM / MOD </span>
+            <code>/vs [RoomID] | /vs2 [Nombre]</code>
+            <div class="desc">Entrar a observar una partida como espectador.</div>
+        </div>
+
+
+        <div class="card user">
+            <span class="vnts">VENTAS GM </span>
+            <code>/recarga [ID] [Monto]</code>
+            <div class="desc">Venta de cash tradicional. Otorga VIP y regalos de escala.</div>
+        </div>
+
+        <div class="card user">
+            <span class="vnts">VENTAS GM </span>
+            <code>/oferta [ID] [Monto]</code>
+            <div class="desc">Similar a recarga pero usando la tabla de ofertas (13, 18, 29...).</div>
+        </div>
+
+        <div class="card user">
+            <span class="vnts">VENTAS GM </span>
+            <code>/pin_manual [Monto]</code>
+            <div class="desc">Crea un código PIN corto para copiar y pegar en el chat.</div>
+        </div>
+
+        <div class="card user">
+            <span class="vnts">VENTAS GM </span>
+            <code>/pin_code [Tipo]</code>
+            <div class="desc">Genera PIN de formato largo para reclamar en la web.</div>
+        </div>
+
+        <div class="card user">
+            <span class="vnts">VENTAS GM </span>
+            <code>/mi_saldo </code>
+            <div class="desc">ver mi saldo disponible.</div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
